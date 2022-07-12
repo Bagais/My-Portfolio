@@ -1,3 +1,10 @@
+
+/** {
+	box-sizing: border-box;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Gloria+Hallelujah&family=Indie+Flower&family=Permanent+Marker&display=swap');
+
 body {
 	width: 1440px;
 	border: 2px solid green;
@@ -17,6 +24,7 @@ nav a{
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-family: 'Indie Flower', cursive;
 	font-size: 25px;
 	letter-spacing: 5px;
 }
@@ -29,16 +37,52 @@ nav a.active {
 	background-color: black;
 	color: white;
 }
+
+h1 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 70px;
+	padding: 150px 0 0 300px;
+	color: white;
+	margin: auto;
+}
+
+header h3 {
+	font-family: 'Gloria Hallelujah', cursive;
+	padding: 15px 25px 0 325px;
+	color: white;
+	font-size: 25px;
+	margin: unset;
+}
+
+h3 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	padding: 5px 25px;
+}
+
+h4 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 30px;
+	letter-spacing: 5px;
+}
+
+h5 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	margin: 0;
+	padding: 5px 25px;
+}
+
+ul {
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+}
 #intro {
 	border: 3px solid darkred;
-/*	border-radius: 40px;
-*//*	display: grid;
-	grid-template-columns: 60%;*/
-/*	justify-content: center;
-*/	width: 90%; height: 600px;
+	width: 90%; height: 600px;
 	margin: auto;
-/*	padding: 15px;
-*/	background-image: url(images/use.jpg);
+	background-image: url(images/profile-picture.jpg);
 	background-repeat: no-repeat;
 	background-size: 1350px 650px;
 	text-align: center;
@@ -49,9 +93,9 @@ nav a.active {
 	border-radius: 50%;
 }
 
-#perks h3{
+/*#perks {
 	padding: 15px 25px;
-}
+}*/
 
 #works {
 	color: lightcoral;
@@ -79,17 +123,27 @@ button {
 	border: 2px solid lightcoral;
 }
 
+button:hover {
+	filter:  brightness(.6);
+	box-shadow: 8px 16px 24px 8px rgba(0,0,0, .16);
+}
+
 #first {
 	background-image: url(images/20210306_174450.jpg);
 	justify-self: left; padding: 4%; position: relative;
+	box-shadow: 0px 4px 6px 0px rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
 }
+
 #first > h4 { position: absolute; top: 50%; left: 50%;
  			transform: translate(-50%, -50%); color: white;
  			visibility: hidden; z-index: 2;
  			transition: all ease-in-out .2s; }
+
 #first:hover > h4 {
 				visibility: visible;
 			}
+
 
 #second {
 	background-image: url(images/20210331_144637.jpg);
@@ -135,18 +189,42 @@ button {
 	padding: 50px;
 }
 
-h1 {
-	font-size: 70px;
-	padding-left: 300px; padding-top: 150px;
-	color: white;
+
+#webChart {
+	border: 5px;
+	border-radius: 10px;
+	padding-left: 5px;
+	background-color: lightpink;
 }
 
-header h3 {
-	padding-left: 300px;
-	color: white;
-	font-size: 25px;
+#designChart {
+	border: 5px;
+	border-radius: 10px;
+	padding-left: 5px;
+	background-color: lightpink;
 }
 
-h3 {
-	font-size: 20px;
+#miscChart {
+	border: 5px;
+	border-radius: 10px;
+	padding-left: 5px;
+	background-color: lightpink;
 }
+
+#charts {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+canvas {
+	width:33%; max-width: 400px;
+}
+
+
+
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Permanent Marker', cursive;
