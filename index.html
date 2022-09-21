@@ -3,15 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Elisha Bagaiya | My Portfolio</title>
+	<title>Elisha Bagaiya | Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 <body>
 	<header>
 		<nav class="back">
 			<a href="index.html">Home</a> |
-			<a href="#">Portfolio</a> |
+			<a href="portfolio.html">Portfolio</a> |
 			<a href="#">Contact Me</a>
 		</nav>
 		<div id="intro">
@@ -20,7 +24,9 @@
 			</div> -->
 			<div>
 				<h1>Elisha Bagaiya</h1>
-				<h3><i>-Illustrator & Fullstack Web Developer-</i></h3>
+				<h2><i>-Architect</i></h2>
+				<h2><i>-Web Developer</i></h2>
+				<h2><i>-Illustrator</i></h2>
 			</div>
 		</div>
 	</header>
@@ -36,9 +42,9 @@
 			<h3>INTERESTS</h3>
 			<h5>I am looking to collaborate on a wide range of experiences including:</h5>
 			<ul>
-				<li>Website Design and Maintenance</li>
-				<li>Illustrations</li>
-				<li>Animation</li>
+				<li>Web Design & Responsiveness</li>
+				<li>Illustrations & Animation</li>
+				<li>Artificial Intelligence</li>
 			</ul>
 		</div>
 		<div id="works">
@@ -50,6 +56,58 @@
 				<button id="fourth"><h4>Tutorials</h4></button>
 			</div>
 		</div>
+
+		<!-- MY SLIDESHOW BOX -->
+				<!-- structure -->
+		<div class="sCont">
+			<div class="slides fade">
+				<div class="first">1/7</div>
+				<img src="images/20210306_174450.jpg">
+				<div class="words">Caption 1</div>
+			</div>
+			<div class="slides fade">
+				<div class="first">2/7</div>
+				<img src="images/Screenshot_20220222-032403.jpg">
+				<div class="words">Caption 2</div>
+			</div>
+			<div class="slides fade">
+				<div class="first">3/7</div>
+				<img src="images/20210331_144637.jpg">
+				<div class="words">Caption 3</div>
+			</div>
+			<div class="slides fade">
+				<div class="first">4/7</div>
+				<img src="images/20210306_174450.jpg">
+				<div class="words">Caption 4</div>
+			</div>
+			<div class="slides fade">
+				<div class="first">5/7</div>
+				<img src="images/20210306_174450.jpg">
+				<div class="words">Caption 5</div>
+			</div>
+		</div>
+		
+		<!-- next & previous buttons -->
+
+		<div class="scroll">
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+			<!-- dots -->
+
+		<div style="text-align: center;">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+
+
+		<!-- MY SLIDESHOW BOX -->
+
+
 	</main>
 	<footer class="back">
 		<span class="Media">

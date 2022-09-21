@@ -1,4 +1,8 @@
-
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
 /** {
 	box-sizing: border-box;
 }
@@ -6,9 +10,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Gloria+Hallelujah&family=Indie+Flower&family=Permanent+Marker&display=swap');
 
 body {
-	width: 1440px;
-	border: 2px solid green;
-	padding-top: 30px;
+/*	width: 1440px;
+*/	border: 2px solid green;
+	padding: 30px 0 30px 0;
+	background-color: black;
 }
 
 nav {
@@ -41,14 +46,17 @@ nav a.active {
 h1 {
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 70px;
-	padding: 150px 0 0 300px;
+	letter-spacing: 5px;
+	padding: 130px 0 0 300px;
+	padding-left: 45%;
 	color: white;
 	margin: auto;
 }
 
-header h3 {
+h2 {
 	font-family: 'Gloria Hallelujah', cursive;
-	padding: 15px 25px 0 325px;
+/*	padding: 15px 25px 0 325px;
+*/	padding-left: 50%;
 	color: white;
 	font-size: 25px;
 	margin: unset;
@@ -57,6 +65,7 @@ header h3 {
 h3 {
 	font-family: 'Indie Flower', cursive;
 	font-size: 20px;
+	font-weight: 900;
 	padding: 5px 25px;
 }
 
@@ -68,15 +77,15 @@ h4 {
 
 h5 {
 	font-family: 'Indie Flower', cursive;
-	font-size: 18px;
-	font-weight: 200;
+	font-size: 22px;
+	font-weight: 400;
 	margin: 0;
 	padding: 5px 25px;
 }
 
 ul {
 	font-family: 'Indie Flower', cursive;
-	font-size: 18px;
+	font-size: 20px;
 }
 #intro {
 	border: 3px solid darkred;
@@ -85,7 +94,7 @@ ul {
 	background-image: url(images/profile-picture.jpg);
 	background-repeat: no-repeat;
 	background-size: 1350px 650px;
-	text-align: center;
+	text-align: left;
 }
 
 .proPic {
@@ -215,6 +224,7 @@ button:hover {
 	display: flex;
 	justify-content: space-between;
 	padding: 15px;
+	overflow: auto;
 }
 
 canvas {
@@ -228,3 +238,172 @@ font-family: 'Dancing Script', cursive;
 font-family: 'Gloria Hallelujah', cursive;
 font-family: 'Indie Flower', cursive;
 font-family: 'Permanent Marker', cursive;
+
+
+		/*MY SLIDESHOW*/
+.sCont {
+	max-width: 80%;
+	display: block;
+/*	position: relative;
+*/	align-self: center;
+	margin: auto;
+}
+
+/*hides images by default*/
+.slides {
+	display: none;
+	margin: auto;
+}
+
+.slides img {
+	width: 70%;
+	display: block;
+	margin: auto;
+}
+
+.scroll {
+	display: block;
+/*	width: 45%;
+*/	padding-left: 46.5%;
+/*	margin: auto;
+*/}
+.prev, .next {
+	cursor: pointer;
+	position: relative;
+	top: 50%;
+	/*display: inline-flex;*/
+	/*width: 45%*/;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.prev {
+	/*padding-left: 47.5%;*/
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.words {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: relative;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.first {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: relative;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from{opacity:  .4}
+	to{opacity: 1;}
+}
+
+
+/*PORTFOLIO PAGE*/
+
+#major {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+#quotes {
+	width: 20%; height: auto;
+	background-color: darkred;
+	display: flex;
+	flex-direction: column;
+}
+
+#sections {
+	width: 68%; height: auto;
+	background-color: darkred;
+	padding: 15px;
+}
+
+#port {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+}
+
+.snips {
+	width: 80%; height: auto;
+	border: 2px solid black;
+	border-radius: 15px;
+	background-color: whitesmoke;
+	margin: auto;
+	padding: 5px;
+}
+
+.part {
+	width: 90%; height: 300px;
+	border: 2px solid black; border-radius: 15px;
+	margin: auto;
+	text-align: center;
+}
+
+#web {
+	background-image: url(images/1121993-aesthetic-wallpapers-1920x1080-for-tablet.jpg);
+	cursor: pointer;
+}
+
+#arch {
+	background-image: url(images/1122076-new-aesthetic-wallpapers-1920x1080-windows-10.jpg);
+	cursor: pointer;
+}
+
+#sketch {
+	background-image: url(images/20210617_183211.jpg);
+	cursor: pointer;
+}
+
+#tuts {
+	background-image: url(images/20220309_160139.jpg);
+	cursor: pointer;
+}
+
+#rando {
+	background-image: url(images/1122076-new-aesthetic-wallpapers-1920x1080-windows-10.jpg);
+	cursor: pointer;
+}
